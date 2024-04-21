@@ -31,11 +31,45 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TVS \n25dk"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:paddingEnd="20dp"
+            android:background="#FFC107"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textVieww"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginEnd="70dp"
+            android:layout_marginStart="-10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/corner_radius"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <AutoCompleteTextView
+                android:id="@+id/textViewedww"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:text="Mutlu Sokak Çiçek Apartmanı No:5"
+                android:background="@drawable/corner_radius"
+                android:gravity="start"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_categories"
